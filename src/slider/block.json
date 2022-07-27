@@ -1,14 +1,15 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/carousel-slider-block",
+	"name": "carousel-slider-block/slider",
 	"version": "0.1.0",
 	"title": "Carousel Slider Block",
-	"category": "widgets",
-	"icon": "smiley",
-	"description": "Example static block scaffolded with Create Block tool.",
+	"category": "design",
+	"icon": "images-alt2",
+	"description": "Slider",
 	"supports": {
-		"html": false
+		"html": false,
+		"align": [ "full" ]
 	},
 	"textdomain": "carousel-slider-block",
 	"editorScript": "file:./index.js",

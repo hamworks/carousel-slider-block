@@ -21,6 +21,7 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_carousel_slider_block_block_init() {
-	register_block_type( __DIR__ . '/build' );
+	register_block_type( __DIR__ . '/build/slider' );
+	register_block_type( __DIR__ . '/build/slider-item' );
 }
 add_action( 'init', 'create_block_carousel_slider_block_block_init' );

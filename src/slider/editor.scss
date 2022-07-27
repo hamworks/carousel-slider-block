@@ -1,0 +1,32 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-carousel-slider-block-slider-items {
+	display: flex;
+	gap: 20px;
+	overflow: scroll;
+}
+
+.wp-block-carousel-slider-block-slider-items > * {
+	min-width: 40%;
+	box-sizing: border-box;
+	padding: 2px;
+
+}
+
+.wp-block-carousel-slider-block-slider-navigation {
+	display: flex;
+	width: min-content;
+	gap: 4px;
+}
+
+.wp-block-carousel-slider-block-slider .wp-block-carousel-slider-block-slider-navigation .components-button {
+	padding: 6px;
+	width: 36px;
+	text-align: center;
+	justify-content: center;
+}
+

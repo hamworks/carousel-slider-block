@@ -1,12 +1,10 @@
 {
-    "core": "WordPress/WordPress#6.0.1",
-    "port": 10000,
-    "plugins": [
-        "."
-    ],
-    "env": {
-        "tests": {
-            "port": 10001
-        }
-    }
+	"core": "WordPress/WordPress#6.0.1",
+	"port": 10000,
+	"plugins": [ "." ],
+	"env": {
+		"tests": {
+			"port": 10001
+		}
+	}
 }

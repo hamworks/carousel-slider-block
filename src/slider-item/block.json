@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "carousel-slider-block/slider-item",
+	"version": "0.1.0",
+	"title": "Carousel Slider Item",
+	"category": "design",
+	"parent": [ "carousel-slider-block/slider" ],
+	"icon": "format-image",
+	"description": "Slider",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "carousel-slider-block",
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
