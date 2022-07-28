@@ -1,5 +1,5 @@
 import { useSelect, useDispatch } from '@wordpress/data';
-import { useEffect, useState } from '@wordpress/element';
+import { useEffect } from '@wordpress/element';
 import {
 	InnerBlocks,
 	BlockControls,
@@ -19,9 +19,6 @@ const allowedBlocks = [ 'carousel-slider-block/slider-item' ];
 const template = [ [ 'carousel-slider-block/slider-item' ] ];
 
 export default function Edit( {
-	attributes,
-	setAttributes,
-	className,
 	isSelected,
 	clientId,
 }: BlockEditProps< {} > ) {

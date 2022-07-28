@@ -1,17 +1,18 @@
-import { __ } from '@wordpress/i18n';
 // @ts-ignore
 import {
 	InnerBlocks,
 	store as blockEditorStore,
 	useBlockProps,
+	// @ts-ignore
 	useInnerBlocksProps,
 } from '@wordpress/block-editor';
 import { useSelect } from '@wordpress/data';
+import type { BlockEditProps } from '@wordpress/blocks';
 
 const allowedBlocks = [ 'core/image', 'core/cover' ];
 const template = [ [ 'core/image', { sizeSlug: 'full' } ] ];
 
-export default function Edit( { clientId } ) {
+export default function Edit( { clientId }: BlockEditProps< {} > ) {
 	const blockProps = useBlockProps();
 	const { hasInnerBlocks } = useSelect(
 		( select ) => {
