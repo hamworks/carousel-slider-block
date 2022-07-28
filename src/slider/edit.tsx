@@ -2,15 +2,13 @@ import { useSelect, useDispatch } from '@wordpress/data';
 import { useEffect } from '@wordpress/element';
 import {
 	InnerBlocks,
-	BlockControls,
 	useBlockProps,
 	// @ts-ignore
 	useInnerBlocksProps,
 	store as blockEditorStore,
 } from '@wordpress/block-editor';
 
-import { ToolbarButton, ToolbarGroup, Button } from '@wordpress/components';
-import { plusCircleFilled } from '@wordpress/icons';
+import { Button } from '@wordpress/components';
 
 import './editor.scss';
 import type { BlockEditProps } from '@wordpress/blocks';
@@ -96,11 +94,6 @@ export default function Edit( {
 	);
 	return (
 		<div { ...blockProps }>
-			<BlockControls>
-				<ToolbarGroup>
-					<ToolbarButton icon={ plusCircleFilled } label="Add" />
-				</ToolbarGroup>
-			</BlockControls>
 			<div { ...innerBlocksProps } />
 			{ ( isSelected || hasSelectedInnerBlock ) && (
 				<div className="wp-block-carousel-slider-block-slider-navigation">
